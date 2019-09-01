@@ -10,6 +10,10 @@ public class BankingAccountApp {
         System.out.println("***********************");
         savingsacc1.showInfo();
 
+        savingsacc1.deposit(2000);
+        checkingacc1.withdraw(200);
+        savingsacc1.transfer("Ted", 250);
+
 
 
         // Read CSV file and create new accounts based on the data
