@@ -29,5 +29,13 @@ public abstract class Account implements IBaseRate{
     }
 
 //    List common methods
+    public void showInfo() {
+        System.out.println(
+                "\nNAME: " + name +
+                        "\nACCOUNT NUMBER: " + acccountNumber +
+                        "\nBALANCE: " + balance
+        );
 
+
+    }
 }
