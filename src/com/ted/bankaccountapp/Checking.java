@@ -13,6 +13,10 @@ public class Checking extends Account{
 
 
     }
+    @Override
+    public void setRate() {
+        rate = getBaseRate() * .15;
+    }
 
 
 
@@ -28,6 +32,7 @@ public class Checking extends Account{
                 "Your Checking Account Features" +
                         "\n Debit Card: " + debitCardNumber +
                         "\n Debit Card PIN: " + debitCardPIN
+
         );
     }
 }
