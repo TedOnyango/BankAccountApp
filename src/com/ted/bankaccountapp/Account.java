@@ -28,11 +28,14 @@ public abstract class Account implements IBaseRate{
         int randomNumber = (int) (Math.random() * Math.pow(10, 3));
         return lastTwoOfSSN + uniqueID + randomNumber;
 
+
     }
+
     public void compound(){
         double accruedInterest = balance * (rate/100);
         balance = balance + accruedInterest;
         System.out.println("Accrued Interest: $" + accruedInterest);
+        printBalance();
     }
 
 //    List common methods-transactions
@@ -43,7 +46,7 @@ public abstract class Account implements IBaseRate{
     }
     public void withdraw(double amount) {
         balance = balance - amount;
-        System.out.println("$" + amount + " withdrawn");
+        System.out.println("$" + balance + " withdrawn");
         printBalance();
     }
     public void transfer(String recipient, double amount) {
