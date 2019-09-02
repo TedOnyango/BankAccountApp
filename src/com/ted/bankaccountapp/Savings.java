@@ -2,8 +2,8 @@ package com.ted.bankaccountapp;
 
 public class Savings extends Account{
 //    List account properties specific to the savings account
-    int safetyDepositBoxID;
-    int safetyDepositBoxKey;
+    private int safetyDepositBoxID;
+    private int safetyDepositBoxKey;
 
 //    Constructor to initialize settings for the savings account
     public Savings(String name, String sSN, double initDeposit) {

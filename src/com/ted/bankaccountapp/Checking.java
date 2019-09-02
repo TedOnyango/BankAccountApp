@@ -2,8 +2,8 @@ package com.ted.bankaccountapp;
 
 public class Checking extends Account{
 //    List properties specific to a checking account
-    int debitCardNumber;
-    int debitCardPIN;
+    private int debitCardNumber;
+    private int debitCardPIN;
 
 //    Constructor to initialize the the checking account
     public Checking (String name, String sSN, double initDeposit) {

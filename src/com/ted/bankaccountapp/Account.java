@@ -2,11 +2,11 @@ package com.ted.bankaccountapp;
 
 public abstract class Account implements IBaseRate{
 //    List common properties for savings and checking accounts
-    String name;
-    String sSN;
+    private String name;
+    private String sSN;
     double balance ;
-    String acccountNumber;
-    double rate;
+    protected String acccountNumber;
+    protected double rate;
     static int index = 10000;
 
 //    Constructor to set based properties and initialize the account
